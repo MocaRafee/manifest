@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="bootleggers-s"
+           fetch="https://github.com/BootleggersROM"
+           review="review.bootleggersrom.xyz"
+           revision="refs/heads/queso" />
+
   <remote  name="bootleggers"
            fetch="https://github.com/Bootleggers-BrokenLab"
            review="review.bootleggersrom.xyz"
            revision="refs/heads/queso" />
+
 
   <remote  name="bootleg-devices"
            fetch="https://github.com/BootleggersROM-Devices"
@@ -44,8 +50,8 @@
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" remote="bootleggers" revision="queso-legacy"/>
 
   <!-- External -->
-  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="bootleggers" />
-  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="bootleggers" />
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="bootleggers-s" />
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="bootleggers-s" />
   <project path="external/tinycompress" name="external_tinycompress" remote="bootleggers" />
 
   <!-- Hardware -->
